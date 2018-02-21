@@ -5,12 +5,9 @@ const alexa = vax.VirtualAlexa.Builder()
     .applicationID("amzn1.ask.skill.[unique-value-here]")
     .create();
 
-describe("Test category", function() {
-
-        test("Launches successfully", (done) => {
-            alexa.utter("get started").then((payload) => {
-                expect(payload.response.outputSpeech.ssml).toContain("Welcome");
-                return alexa.utter("");
-            });
-            });
-        });
+test("Launches successfully", (done) => {
+    alexa.utter("get started").then((payload) => {
+        expect(payload.response.outputSpeech.ssml).toContain("Welcome");
+        return alexa.utter("");
+    });
+});

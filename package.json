@@ -1,0 +1,19 @@
+{
+  "name": "unitTest",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "alexa-sdk": "^1.0.22",
+    "i18next": "^10.2.1",
+    "i18next-sprintf-postprocessor": "^0.2.2"
+  },
+  "devDependencies": {
+      "jest": "^22.3.0",
+      "pack-zip": "^0.2.2",
+      "virtual-alexa": "^0.4.2"
+  },
+  "scripts": {
+    "build-aws-resource": "pack-zip",
+    "test": "jest"
+ }
+}
